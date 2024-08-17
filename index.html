@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap">
     <style>
         body {
-            font-family: 'Dosis', sans-serif; /* 這是你全局使用的字體 */
+            font-family: 'Dosis', sans-serif;
             background-color: #f5efe8;
             margin: 0;
             padding: 0;
@@ -18,17 +18,49 @@
             min-height: 100vh;
         }
 
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #d9cfc3;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between; /* 使內容與圖片在兩端對齊 */
+            align-items: center;
+        }
+
+        .text-section {
+            max-width: 50%;
+            margin-left: 20px; /* 向左移動文本部分 */
+        }
+
         h1 {
-            font-weight: 700; /* 保持標題字體不變 */
+            font-weight: 700;
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 200;
+        }
+
+        .image-section {
+            max-width: 45%; /* 控制圖片寬度 */
+            opacity: 0.5; /* 設置透明度，創造輕背景效果 */
+            margin-right: 20px; /* 向右移動圖片部分 */
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>CanvasCraze</h1>
-        <p style="font-family: 'Nunito', sans-serif; font-weight: 200;">
-            Just a Taiwanese girl navigating the NYC maze with a touch of whimsy.
-        </p>
+        <div class="text-section">
+            <h1>CanvasCraze</h1>
+            <p>Just a Taiwanese girl navigating the NYC maze with a touch of whimsy.</p>
         </div>
         <div class="image-section">
             <img src="bk_cafe_2022_summer.png" alt="Light Background Image">
