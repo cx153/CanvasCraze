@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <title>CanvasCraze</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5efe8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .text-section {
+            max-width: 50%;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .image-section img {
+            max-width: 500px;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        .social {
+            margin-top: 20px;
+        }
+        .social img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <div class="container">
+        <div class="text-section">
+            <div class="nav">
+                <a href="#">BIO</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">CONTACT</a>
+                <a href="#">FAQ</a>
+            </div>
+            <h1>CanvasCraze</h1>
+            <p>I'm a dedicated culture critic and artist located in New York City.</p>
+            <div class="social">
+                <p>CanvasCraze</p>
+                <img src="your-instagram-icon.png" alt="Instagram">
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="your-image.jpg" alt="CanvasCraze Image">
+        </div>
+    </div>
 </body>
 </html>
