@@ -11,6 +11,9 @@ export default function Bio() {
         <title>Cindy Bio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <div className={styles.breadcrumb}>
+        <a href="/">首页</a> > <span>Bio</span>
+      </div>
       <div className={styles.container}>
         <div className={styles.imageSection}>
           <Image 
