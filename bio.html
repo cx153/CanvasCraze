@@ -30,6 +30,8 @@
 
         .image-section {
             flex-basis: 30%; /* 使图片占据1/3的空间 */
+            flex-grow: 1;
+            margin-right: 40px; /* 增加图片和文字之间的距离 */
         }
 
         .image-section img {
@@ -70,17 +72,6 @@
             color: #4a4a4a;
         }
 
-        .logo-section {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 40px;
-        }
-
-        .logo-section img {
-            width: 50px;
-            height: 50px;
-        }
-
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -103,15 +94,6 @@
             p {
                 font-size: 16px;
             }
-
-            .logo-section {
-                justify-content: center;
-            }
-
-            .logo-section img {
-                width: 40px;
-                height: 40px;
-            }
         }
     </style>
 </head>
@@ -123,8 +105,7 @@
         <div class="text-section">
             <h1>Cindy</h1>
             <h2>GRAPHIC DESIGNER</h2>
-            <p>As a graphic designer with expertise in both visual arts and technical design, I create work that resonates both visually aesthetics and functionality.</p>
-            <p>My paintings capture the fleeting emotions and hidden beauty woven into the fabric of New York City, revealing the city's soul through its everyday moments.</p>
+            <p>As a graphic designer with expertise in both visual arts and technical design, I create work that resonates both visually aesthetics and functionality. My paintings capture the fleeting emotions and hidden beauty woven into the fabric of New York City, revealing the city's soul through its everyday moments.</p>
             <p>I welcome the chance to collaborate on meaningful and innovative projects.</p>
         </div>
     </div>
