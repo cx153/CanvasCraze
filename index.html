@@ -28,6 +28,17 @@
             position: relative; /* 設置父容器為相對定位 */
         }
 
+        .left-image-section {
+            width: 10%; /* 控制左邊圖片顯示的寬度 */
+            margin-right: 10%; /* 與文字部分保持一些距離 */
+            overflow: hidden; /* 隱藏超出部分 */
+        }
+
+        .left-image-section img {
+            width: 200%; /* 使圖片超出容器的寬度，並只顯示一半 */
+            transform: translateX(-80%); /* 向左移動圖片以只顯示右半部分 */
+        }
+
         .text-section {
             max-width: 60%;
             margin-left: 20%;
