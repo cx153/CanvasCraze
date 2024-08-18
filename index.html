@@ -33,6 +33,7 @@
             color: #333;
             margin: 0 15px;
             font-size: 18px;
+            font-weight: normal; /* 修改字体粗细 */
         }
 
         .nav a:hover {
@@ -80,6 +81,38 @@
             position: absolute;
             left: 265px; /* 數字愈大愈右 */
             bottom: 40px; /* 將圖標放置在文字區域的下方，數字愈大愈上 */
+        }
+
+        /* 移动端优化 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start; /* 在移动端内容左对齐 */
+                padding: 20px; /* 减少内边距 */
+            }
+
+            .text-section, .image-section {
+                max-width: 100%; /* 设置宽度为100% */
+                margin-left: 0; /* 移除左边距 */
+                margin-right: 0; /* 移除右边距 */
+            }
+
+            .text-section {
+                margin-bottom: 20px; /* 文字和图片之间的间距 */
+                text-align: center; /* 移动端文字居中 */
+            }
+
+            .image-section img {
+                width: 100%; /* 保证图片在移动端宽度为100% */
+            }
+
+            .social-links {
+                position: relative;
+                left: 50%; /* 移动端使图标居中 */
+                bottom: auto;
+                transform: translateX(-50%);
+                margin-top: 20px; /* 图标与其他内容的间距 */
+            }
         }
     </style>
 </head>
