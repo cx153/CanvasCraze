@@ -1,0 +1,54 @@
+/* styles/Bio.module.css */
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageSection {
+    flex-basis: 30%; /* 使图片占据1/3的空间 */
+    flex-grow: 1;
+    margin-right: 40px; /* 增加图片和文字之间的距离 */
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards 1s;
+}
+
+.textSection {
+    flex-basis: 70%; /* 使文字区域占据2/3的空间 */
+    font-family: 'Playfair Display', serif;
+    color: #3e3e3e;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+}
+
+.title {
+    font-family: 'Didot', serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 0;
+    color: #4a4a4a;
+}
+
+.subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 20px 0;
+    color: #8e8e8e;
+    letter-spacing: 2px;
+}
+
+.description {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #4a4a4a;
+}
