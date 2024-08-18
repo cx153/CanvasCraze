@@ -32,10 +32,7 @@
             max-width: 60%;
             margin-left: 20%;
             margin-right: 0%; /* 增加與圖片部分的間距 */
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end; /* 将内容放置到容器底部 */
+            position: relative; /* 使其成為包含IG icon定位的參考點 */
         }
 
         h1 {
@@ -50,7 +47,6 @@
         .image-section {
             max-width: 50%; /* 增加這個值讓圖片變大 */
             margin-left: 5%; /* 保持左側邊距 */
-            position: relative; /* 設置圖片部分為相對定位，以便在其內部進行絕對定位 */
         }
 
         .image-section img {
@@ -61,9 +57,8 @@
         /* 調整社交圖標的樣式 */
         .social-links {
             position: absolute;
-            align-self: flex-start; /* 将图标放置在文字区域的左下角 */
-            margin-top: 50px; /* 与文字部分保持一些距离 */
-            margin-left: 10px; /* 保持在文字容器的左侧 */
+            bottom: -50px; /* 將圖標放置在文字區域的下方 */
+            left: 0; /* 固定在文字區域的左側 */
         }
     </style>
 </head>
