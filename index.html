@@ -85,33 +85,43 @@
 
         /* 移动端优化 */
         @media (max-width: 768px) {
+            .nav a {
+                font-size: 14px;
+            }
+            
             .container {
                 flex-direction: column;
-                align-items: flex-start; /* 在移动端内容左对齐 */
-                padding: 20px; /* 减少内边距 */
-            }
-
-            .text-section, .image-section {
-                max-width: 100%; /* 设置宽度为100% */
-                margin-left: 0; /* 移除左边距 */
-                margin-right: 0; /* 移除右边距 */
+                align-items: center;
+                padding: 20px;
             }
 
             .text-section {
-                margin-bottom: 20px; /* 文字和图片之间的间距 */
-                text-align: center; /* 移动端文字居中 */
+                max-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 20px;
+                text-align: center;
             }
 
-            .image-section img {
-                width: 100%; /* 保证图片在移动端宽度为100% */
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .image-section {
+                max-width: 100%;
+                margin-left: 0;
             }
 
             .social-links {
                 position: relative;
-                left: 50%; /* 移动端使图标居中 */
+                left: 50%;
                 bottom: auto;
                 transform: translateX(-50%);
-                margin-top: 20px; /* 图标与其他内容的间距 */
+                margin-top: 20px;
             }
         }
     </style>
