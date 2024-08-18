@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio - CanvasCraze</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Dosis|Playfair+Display:700,900">
+    <style>
+        body {
+            font-family: 'Dosis', sans-serif;
+            background-color: #f5efe8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .text-section {
+            max-width: 60%;
+            margin-left: 20%;
+            margin-right: 0%;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 200;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .image-section {
+            max-width: 50%;
+            margin-left: 5%;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .social-links {
+            position: absolute;
+            left: 265px;
+            bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .text-section {
+                max-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .image-section {
+                max-width: 80%;
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .image-section img {
+                max-width: 90%;
+            }
+
+            .social-links {
+                position: relative;
+                left: auto;
+                bottom: auto;
+                transform: none;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h1>About Me</h1>
+            <p>Combining calligraphy and painting is where my creative journey begins...</p>
+        </div>
+        <div class="image-section">
+            <img src="bio_image.jpg" alt="Bio Image">
+        </div>
+    </div>
+</body>
+</html>
