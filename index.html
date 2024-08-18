@@ -25,7 +25,6 @@
             display: flex;
             justify-content: space-between;
             align-items: cposition: 
-            relative; /* 設置父容器為相對定位 */
         }
 
         .text-section {
@@ -46,6 +45,7 @@
         .image-section {
             max-width: 50%; /* 增加這個值讓圖片變大 */
             margin-left: 5%; /* 保持左側邊距 */
+            position: relative; /* 設置圖片部分為相對定位，以便在其內部進行絕對定位 */
         }
 
         .image-section img {
@@ -56,8 +56,10 @@
         /* 調整社交圖標的樣式 */
         .social-links {
             position: absolute;
-            bottom: 20px; /* 距離底部20px */
-            left: 20px; /* 距離左側20px */
+            bottom: 0; /* 固定在圖片的底部 */
+            left: 0; /* 固定在圖片的左側 */
+            margin-left: -40px; /* 根據需要微調位置，將圖標移動到文字區域與圖片相交處 */
+            margin-bottom: -40px; /* 根據需要微調位置 */
         }
     </style>
 </head>
