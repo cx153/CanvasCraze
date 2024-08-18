@@ -1,3 +1,5 @@
+/* Bio.module.css */
+
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #f5efe8;
@@ -19,7 +21,7 @@ body {
     align-items: center;
 }
 
-.image-section {
+.imageSection {
     flex-basis: 30%; /* 使图片占据1/3的空间 */
     flex-grow: 1;
     margin-right: 40px; /* 增加图片和文字之间的距离 */
@@ -28,13 +30,13 @@ body {
     animation: slideIn 2s forwards 1s;
 }
 
-.image-section img {
+.imageSection img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.text-section {
+.textSection {
     flex-basis: 70%; /* 使文字区域占据2/3的空间 */
     font-family: 'Playfair Display', serif;
     color: #3e3e3e;
@@ -75,12 +77,12 @@ p {
         padding: 20px;
     }
 
-    .image-section {
+    .imageSection {
         margin-right: 0;
         margin-bottom: 20px;
     }
 
-    .image-section img {
+    .imageSection img {
         width: 30%; /* 调整移动端图片宽度 */
         margin: 0 auto; /* 让图片居中 */
     }
@@ -119,4 +121,30 @@ p {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/* Breadcrumb 样式 */
+.breadcrumb {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; /* 背景颜色 */
+    border-radius: 5px; /* 圆角 */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #0073e6; /* 链接颜色 */
+    transition: color 0.3s ease; /* 平滑过渡效果 */
+}
+
+.breadcrumb a:hover {
+    color: #005bb5; /* 悬停时的颜色 */
+}
+
+.breadcrumb span {
+    color: #555; /* 当前页面文字颜色 */
 }
