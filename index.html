@@ -4,149 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CanvasCraze</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Dosis">
     <style>
-        body {
-            font-family: 'Dosis', sans-serif;
-            background-color: #f5efe8;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .nav {
-            width: 100%;
-            background-color: #f5efe8;
-            display: flex;
-            justify-content: space-around;
-            padding: 20px 0;
-            border-bottom: 1px solid #f7b7b7;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-
-        .nav a:hover {
-            color: #0073e6;
-        }
-
         .container {
             max-width: 1200px;
-            width: 100%;
+            margin: 0 auto;
             padding: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative; /* 設置父容器為相對定位 */
         }
 
         .text-section {
-            max-width: 60%;
-            margin-left: 20%;
-            margin-right: 0%; /* 增加與圖片部分的間距 */
-            position: relative; /* 使其成為包含IG icon定位的參考點 */
+            margin-bottom: 40px;
         }
 
-        h1 {
+        .text-section h1 {
+            font-family: 'Dosis', sans-serif;
+            font-size: 48px;
             font-weight: 700;
         }
 
-        p {
+        .text-section p {
             font-family: 'Nunito', sans-serif;
             font-weight: 200;
+            font-size: 20px;
         }
 
-        .image-section {
-            max-width: 50%; /* 增加這個值讓圖片變大 */
-            margin-left: 5%; /* 保持左側邊距 */
-        }
-
-        .image-section img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* 調整社交圖標的樣式 */
         .social-links {
-            position: absolute;
-            left: 265px; /* 數字愈大愈右 */
-            bottom: 40px; /* 將圖標放置在文字區域的下方，數字愈大愈上 */
+            margin-top: 20px;
         }
 
-        /* 移动端优化 */
-        @media (max-width: 768px) {
-            .nav a {
-                font-size: 14px;
-            }
-            
-            .container {
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-between;
-                padding: 20px;
-            }
-
-            .text-section {
-                max-width: 60%;
-                margin-left: 0;
-                margin-right: 5%;
-                text-align: left;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 14px;
-            }
-
-            .image-section {
-                max-width: 35%;
-                margin-left: 0;
-            }
-
-            .social-links {
-                left: 0;
-                bottom: -40px;
-                transform: none;
-                margin-top: 0;
-            }
+        .w3-navbar {
+            padding: 0;
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <a href="#bio">BIO</a>
-        <a href="#portfolio">PORTFOLIO</a>
-        <a href="#contact">CONTACT</a>
-        <a href="#faq">FAQ</a>
+
+<!-- Navigation -->
+<div class="w3-top w3-black">
+    <div class="w3-bar w3-padding w3-black">
+        <a href="#bio" class="w3-bar-item w3-button">BIO</a>
+        <a href="#portfolio" class="w3-bar-item w3-button">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="#faq" class="w3-bar-item w3-button">FAQ</a>
     </div>
-    
-    <div class="container">
+</div>
+
+<!-- Main content -->
+<div class="w3-container w3-padding-64" id="bio">
+    <div class="container w3-card w3-padding w3-light-grey">
         <div class="text-section">
             <h1>CanvasCraze</h1>
             <p>Just a Taiwanese girl navigating the NYC maze with a touch of whimsy.</p>
         </div>
-        <div class="image-section">
-            <img src="bk_cafe_summer2022.jpg" alt="Light Background Image">
-        
-            <!-- 將 Instagram 鏈接放置在 container 的左下角 -->
-            <div class="social-links">
-                <a href="https://www.instagram.com/CanvasCrazeShop/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px;">
+        <div class="image-section w3-center">
+            <img src="bk_cafe_summer2022.jpg" alt="Light Background Image" style="width:100%; max-width:600px;">
+            <div class="social-links w3-center">
+                <a href="https://www.instagram.com/CanvasCrazeShop/" target="_blank" class="w3-button w3-black w3-round">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:30px;">
                 </a>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
 </body>
 </html>
